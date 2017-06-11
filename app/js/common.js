@@ -6,4 +6,11 @@ $(function() {
 			return $(this).attr("src").replace(".svg", "png");
 		});
 	};
+
+//SuperFish
+	$(".sf-menu").superfish({
+		delay: 300,
+		speed: "fast",
+		cssArrows: false
+	});
 });

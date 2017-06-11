@@ -45,6 +45,7 @@ body
 	max-width: 100%
 	height: auto
 
+//extend mnu
 .ulmnu
 	font-size: 11px
 	list-style-type: none
@@ -57,6 +58,11 @@ body
 	a
 		color: $concrete
 
+//top-line
+.top-line
+	line-height: 30px
+	border-bottom: 1px solid $grey
+
 .top-mnu
 	ul
 		@extend .ulmnu
@@ -66,10 +72,7 @@ body
 		padding: 0 4px
 	@extend .ulmnu
 
-.top-line
-	line-height: 30px
-	border-bottom: 1px solid $grey
-
+//center-line
 .center-line
 	padding: 25px 0
 	border-bottom: 1px solid $grey
@@ -99,20 +102,67 @@ body
 	img
 		max-width: 125px
 
-
-.bootom-line
+// bottom-line
+.bottom-line
 	border-bottom: 1px solid $grey
 	text-align: center
 
 .main-mnu
-	li
-		padding: 0 40px
+	display: inline-block
+	text-align: center
+	vertical-align: middle;
+
+//SF Base Start
+.sf-menu
+	margin-bottom: 0
+	position: static
+	float: none
+	.sf-mega
+		background-color: $white
+		padding: 25px 15px
 		a
-			color: $accent
-			font-family: $bold-font
+			border-bottom: 2px solid $white
+			padding: 3px
 			&:hover
 				color: $concrete
-	@extend .ulmnu
+				border-bottom: 2px solid $white
+		ul
+			display: block
+			float: none
+			position: relative
+			box-shadow: none
+	li
+		white-space: normal
+		position: static
+		background-color: $white
+		margin: 0 30px
+		a
+			font-size: 11px
+			color: $accent
+			font-family: $bold-font
+			background-color: $white
+			text-transform: uppercase
+			border-bottom: 2px solid $white
+			&:hover
+				color: $concrete
+				border-bottom: 2px solid $accent
+
+.mega-sub
+	.mega-sub-title
+		a
+			font-family: $bold-font
+			text-transform: uppercase
+			padding-bottom: 7px
+	li
+		a
+			font-family: $medium-font
+			text-transform: none
+.one,
+.three
+	border-left: 1px solid $grey
+//SF Base End
+
+
 
 
 @import "media" // Всегда в конце
