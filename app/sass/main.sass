@@ -121,7 +121,7 @@ body
 		background-color: $white
 		padding: 25px 15px
 		a
-			border-bottom: 2px solid $white
+			border-bottom: 2px solid transparent
 			padding: 3px
 			&:hover
 				color: $concrete
@@ -142,7 +142,7 @@ body
 			font-family: $bold-font
 			background-color: $white
 			text-transform: uppercase
-			border-bottom: 2px solid $white
+			border-bottom: 2px solid transparent
 			&:hover
 				color: $concrete
 				border-bottom: 2px solid $accent
@@ -162,7 +162,126 @@ body
 	border-left: 1px solid $grey
 //SF Base End
 
+//header image
+.header-image
+	margin: 30px 0
+	background-image: url("../img/food_.jpg")
+	background-size: cover
+	background-position: no-repeat center
+	height: 450px
+	.head-title
+		font-size: 40px
+		letter-spacing: 2px
+		margin: 90px 0
+		line-height: 50px
+		a
+			color: $white
+	.title-date
+		color: $white
+		text-transform: uppercase
+		font-size: 12px
+		font-family: $medium-font
+		letter-spacing: 1px
 
+//products
+.products
+	padding: 40px 0
+	.col-one
+		text-transform: uppercase
+		line-height: 33px
+		text-align: center
+		font-family: $medium-font
+	.col-md-3
+		padding: 0 70px
+
+.new-item
+	text-align: center
+	line-height: 20px
+	color: $silver
+	padding: 0
+	.price
+		font-family: $bold-font
+	&-img
+		min-height: 140px
+		min-width: 140px
+		background-size: cover
+		background-position: no-repeat center
+		margin-bottom: 10px
+
+//exercices
+.exercices
+	padding: 40px 0
+
+.exercices-item
+	position: relative
+	&-img
+		min-height: 400px
+		background-size: cover
+		background-position: no-repeat center
+		margin-bottom: 10px
+
+.exercices-item-title,
+.exercices-item-title-two
+	position: absolute
+	background: $white
+	line-height: 0
+	width: 80%
+	bottom: 40px
+	right: 0
+	text-transform: uppercase
+	h6
+		font-size: 14px
+		margin:
+			left: 15px
+			top: 20px
+			bottom: 15px
+	p
+		font-size: 12px
+		color: $silver
+		margin:
+			left: 15px
+			top: 20px
+			bottom: 25px
+
+.exercices-item-title-two
+	left: 0
+	h6
+		margin:
+			right: 15px
+	p
+		font-size: 12px
+		color: $silver
+		margin:
+			right: 15px
+
+.right
+	float: right 
+
+//spotlight
+.spotlight
+	padding: 40px 0
+	background-color: $grey
+	.spotlight-item
+		padding: 0 30px
+		text-transform: uppercase
+		line-height: 33px
+		font-family: $medium-font
+		h2:first-child
+			margin-bottom: 60px
+		h2
+			font-family: $extraBold-font
+		p
+			line-height: 20px
+			color: $silver
+			text-transform: none
+			font-family: $default-font
+		.button
+			display: inline-block
+			margin-top: 70px
+			padding: 0 50px
+			line-height: 33px
+	.spotlight-item-two
+		text-align: center
 
 
 @import "media" // Всегда в конце
