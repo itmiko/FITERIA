@@ -268,7 +268,7 @@ body
 		font-family: $medium-font
 		h2:first-child
 			margin-bottom: 60px
-		h2
+		h2:nth-child(2)
 			font-family: $extraBold-font
 		p
 			line-height: 20px
@@ -277,11 +277,170 @@ body
 			font-family: $default-font
 		.button
 			display: inline-block
-			margin-top: 70px
+			margin-top: 110px
 			padding: 0 50px
 			line-height: 33px
 	.spotlight-item-two
 		text-align: center
+
+
+//news
+.news
+	padding: 50px 0
+
+.news-item
+	background-color: $white
+	text-align: center
+	margin: 0 10px
+	&-img
+		position: relative
+		min-height: 300px
+		background-size: cover
+		display: block
+		.news-item-title
+			position: absolute
+			background: $white
+			line-height: 0
+			width: 70%
+			bottom: 0
+			left: 0
+			text-transform: uppercase
+			h6
+				text-align: left
+				color: $concrete
+				font-family: $thinlight-font
+				letter-spacing: 1px
+				margin: 15px 0
+	.news-item-title-two
+		background: $grey
+		height: 30px
+		width: 100%
+	h4, p
+		padding: 0 20px
+	h4
+		font-family: $medium-font
+	p
+		font-size: 14px
+		line-height: 17px
+		color: $silver
+//partners
+.partners
+	.partner
+		background: $accent
+		width: 275px
+		height: 150px
+		display: table
+		margin: auto
+		h2
+			color: $white
+			font-size: 30px
+			line-height: 40px
+			text-align: center
+			display: table-cell
+			vertical-align: middle
+			text-transform: uppercase
+	.owl-dots
+		width: 100%
+		text-align: center
+		margin-top: 50px
+		.owl-dot
+			width: 9px
+			height: 9px
+			background-color: $accent
+			border-radius: 50%
+			display: inline-block
+			margin: 5px
+			transition: background-color .5s, transform .5s 
+			&.active
+				background-color: $silver
+				transform: scale(1.2)
+
+	.owl-stage
+		// display: flex
+	.owl-item
+		margin-top: 50px
+
+//fotos
+.our_fotos
+	margin-top: 50px
+	.fotos
+		.foto
+			&:hover
+				.fa
+					opacity: .8
+				&::before
+					opacity: .1
+	.foto
+		display: inline-block
+		margin: auto
+		text-align: center
+		width: 265px
+		min-height: 250px
+		background-size: cover
+		position: relative
+		.fa
+			font-size: 13px
+			color: $white
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -10px
+			margin-left: -48px
+			opacity: 0
+			transition: all .5s ease
+			span
+				font-family: $light-font
+		.fa:nth-child(2)
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -10px
+			margin-left: 12px
+			span
+				font-family: $light-font
+		&::before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background-color: $grey
+			opacity: 0
+			transition: all .5s ease
+// footer
+footer
+	padding-top: 100px
+	background-color: $accent
+	height: 300px
+	color: $white
+	text-transform: uppercase
+	a.footer-logo
+		color: $white
+		font-size: 38px
+		font-family: $medium-font
+		display: inline-block
+		margin-left: 50px
+		text-align: center
+	.footer-adress
+		text-transform: none
+		font-size: 19px
+		font-family: $light-font
+		line-height: 24px
+	.footer-list,
+	.footer-list-two,
+	.footer-list-three
+		float: left
+		list-style-type: none
+		font-family: $medium-font
+		font-size: 13px
+		padding: 0
+		margin: 0
+		margin-left: 20px
+		a
+			color: $white
+
+
 
 
 @import "media" // Всегда в конце

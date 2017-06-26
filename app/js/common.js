@@ -1,4 +1,6 @@
 $(function() {
+	//EqualHeights
+$(".news-item h4").equalHeights();
 // Custom JS
 //SVG Fallback
 	if(!Modernizr.svg) {
@@ -12,5 +14,58 @@ $(function() {
 		delay: 300,
 		speed: "fast",
 		cssArrows: false
+	});
+
+//Owl-carousel pasrtners
+	$(".partners").owlCarousel({
+		autoplay: true,
+		autoplayTimeout: 3000,
+		loop: true,
+		smartSpeed: 700,
+		items: 4,
+		dots: true,
+		nav: false,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 4
+			},
+		}
+	});
+
+	//Owl-carousel fotos
+	$(".fotos").owlCarousel({
+		autoplay: true,
+		autoplayTimeout: 4000,
+		loop: true,
+		smartSpeed: 700,
+		items: 5,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			505: {
+				items: 2
+			},
+			768: {
+				items: 3
+			},
+			992: {
+				items: 4
+			},
+			1200: {
+				items: 5
+			},
+		}
 	});
 });

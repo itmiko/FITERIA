@@ -29,6 +29,8 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/modernizr/modernizr.js',
 		'app/libs/superfish/dist/js/superfish.min.js',
+		'app/libs/equalheights/equalheights.js',
+		'app/libs/owl.carousel/owl.carousel.min.js',
 		'app/js/common.min.js', // Всегда в конце
 
 		])
