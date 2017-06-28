@@ -192,7 +192,7 @@ body
 		text-align: center
 		font-family: $medium-font
 	.col-md-3
-		padding: 0 70px
+		padding: 0 50px
 
 .new-item
 	text-align: center
@@ -202,11 +202,12 @@ body
 	.price
 		font-family: $bold-font
 	&-img
-		min-height: 140px
-		min-width: 140px
+		display: block
+		min-height: 160px
 		background-size: cover
-		background-position: no-repeat center
-		margin-bottom: 10px
+		background-position: center
+		background-repeat: no-repeat
+		margin-bottom: 20px
 
 //exercices
 .exercices
@@ -291,7 +292,6 @@ body
 .news-item
 	background-color: $white
 	text-align: center
-	margin: 0 10px
 	&-img
 		position: relative
 		min-height: 300px
@@ -362,6 +362,7 @@ body
 
 //fotos
 .our_fotos
+	text-align: center
 	margin-top: 50px
 	.fotos
 		.foto
@@ -427,10 +428,11 @@ footer
 		font-size: 19px
 		font-family: $light-font
 		line-height: 24px
-	.footer-list,
+	.footer-list-one,
 	.footer-list-two,
 	.footer-list-three
-		float: left
+		// float: left
+		display: inline-block
 		list-style-type: none
 		font-family: $medium-font
 		font-size: 13px
@@ -439,6 +441,9 @@ footer
 		margin-left: 20px
 		a
 			color: $white
+			transition: all .4s ease
+			&:hover
+				color: $concrete
 
 
 
