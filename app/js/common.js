@@ -8,12 +8,28 @@ $(".news-item h4").equalHeights();
 			return $(this).attr("src").replace(".svg", "png");
 		});
 	};
-
 //SuperFish
 	$(".sf-menu").superfish({
 		delay: 300,
 		speed: "fast",
 		cssArrows: false
+	})
+	.after("<div id='mobile-menu'>").clone().appendTo('#mobile-menu');
+	$("#mobile-menu").find("*").attr("style", "");
+	$("#mobile-menu").children('ul').removeClass("sf-menu")
+	.parent().mmenu({
+		extensions : [ 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
+		navbar: {
+			title: "Menu"
+		}
+	});
+
+	$(".hamburger").click(function() {
+		$(this).addClass("on");
+	});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+	var api = $("#mobile-menu").data("mmenu");
+	api.bind("closed", function () {
+		$(".hamburger").removeClass("on");
 	});
 
 //Owl-carousel pasrtners
@@ -42,7 +58,7 @@ $(".news-item h4").equalHeights();
 		}
 	});
 
-	//Owl-carousel fotos
+//Owl-carousel fotos
 	$(".fotos").owlCarousel({
 		autoplay: true,
 		autoplayTimeout: 4000,

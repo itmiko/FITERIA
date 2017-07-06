@@ -58,9 +58,11 @@
 		display: none
 	.our_fotos
 		margin-top: 50px
-	.main-mnu,
 	.top-mnu
 		display: none
+	.main-mnu
+		ul
+			display: none
 	.spotlight
 		text-align: center
 		.spotlight-item
@@ -82,9 +84,6 @@
 			margin-left: 0 
 		.footer-list
 			text-align: center
-		// 	margin: 0 auto
-		// 	&-one
-		// 		margin-left: 0 
 
 	/**/
 
@@ -141,6 +140,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
+	.hamburger
+		display: none
+	.hamburger, #mobile-menu, html.mm-blocking #mm-blocker
+		display: none
+
+	html
+		&.mm-opening
+			.mm-slideout
+				-webkit-transform: translate(0px, 0px) !important
+				-ms-transform: translate(0px, 0px) !important
+				transform: translate(0px, 0px) !important
+
+
 	/**/
 
 
