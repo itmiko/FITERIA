@@ -84,4 +84,11 @@ $(".news-item h4").equalHeights();
 			},
 		}
 	});
+// Accordion menu
+	$(".menu-list").find('.accordion-toggle').click(function() {
+		$(this).toggleClass("active-tab").find("span").toggleClass("icon-minus icon-plus");
+		$(this).next().toggleClass("open").slideToggle("fast");
+		$(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
+		$(".menu-list .accordion-toggle").not($(this)).removeClass("active-tab").find("span").removeClass("icon-minus").addClass("icon-plus")
+	}); 
 });
