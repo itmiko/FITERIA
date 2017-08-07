@@ -91,4 +91,34 @@ $(".news-item h4").equalHeights();
 		$(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
 		$(".menu-list .accordion-toggle").not($(this)).removeClass("active-tab").find("span").removeClass("icon-minus").addClass("icon-plus")
 	}); 
+
+// Accordion fitness-filter
+		$(".nav").find('.plus-1').click(function() {
+		$(this).find("span").toggleClass("icon-minus icon-plus");
+		$(".nav .plus-1").not($(this)).find("span").removeClass("icon-minus").addClass("icon-plus")
+	}); 
+
+		$(".nav").find('.plus-2').click(function() {
+		$(this).find("span").toggleClass("icon-minus icon-plus");
+		$(".nav .plus-2").not($(this)).find("span").removeClass("icon-minus").addClass("icon-plus")
+	});
+
+		$(".nav").find('.plus-3').click(function() {
+		$(this).find("span").toggleClass("icon-minus icon-plus");
+		$(".nav .plus-3").not($(this)).find("span").removeClass("icon-minus").addClass("icon-plus")
+	});
+
+		$(".nav").find('.plus-4').click(function() {
+		$(this).find("span").toggleClass("icon-minus icon-plus");
+		$(".nav .plus-4").not($(this)).find("span").removeClass("icon-minus").addClass("icon-plus")
+	});
+
+		$(".nav").find('.plus-5').click(function() {
+		$(this).find("span").toggleClass("icon-minus icon-plus");
+		$(".nav .plus-5").not($(this)).find("span").removeClass("icon-minus").addClass("icon-plus")
+	});
+
 });
+
+
+ 

@@ -410,27 +410,105 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="col-md-3 fitness-filter">
+						<nav class="nav" role="navigation">
+							<ul class="nav__list">
+								<li>
+									<input id="group-1" type="checkbox" hidden />
+									<label for="group-1" class="plus-1"><span class="icon-plus"></span> Filter Produkte</label>
+									<ul class="group-list">
+										<li><a href="#">Shakes</a><span>(1)</span></li>
+										<li><a href="#">Essen</a><span>(2)</span></li>
+										<li>
+											<input id="sub-group-1" type="checkbox" hidden />
+											<label for="sub-group-1" class="plus-2"><span class="icon-plus"></span> Neue Produkte</label>
+											<ul class="sub-group-list">
+												<li><a href="#"><img src="img/coffee.jpg" alt="">
+												<p id="name" style="top: 2px; right: 30px">Shape Shaker</p><p id="price" style="top: 26px; left: 110px; font-size:13px">29.99 &euro;</p></a></li>
+												<li><a href="#"><img src="img/coffee.jpg" alt="">
+												<p id="name" style="top: 2px; right: 30px">Shape Shaker</p><p id="price" style="top: 26px; left: 110px; font-size:13px">29.99 &euro; - 129.00 &euro;</p></a></li>
+												<li><a href="#"><img src="img/coffee.jpg" alt="">
+												<p id="name" style="top: 2px; right: 30px">Shape Shaker</p>
+												<p id="price" class="price-new" style="top: 26px; left: 110px; font-size:13px">29.99 &euro;</p>
+												<p id="price" style="top: 26px; left: 180px; font-size:13px">29.99 &euro;</p>
+												</a></li>
+											</ul>
+										</li>
+										<li>
+											<input id="sub-group-2" type="checkbox" hidden />
+											<label for="sub-group-2"  class="plus-3"><span class="icon-plus"></span> Grösse</label>
+											<ul class="sub-group-list">
+												<li><a href="#">
+													<table class="table table-bordered" style="width:100%">
+														<tbody>
+															<tr>
+																<td>XS</td>
+																<td>S</td>
+																<td>M</td>
+																<td>L</td>
+																<td>XL</td>
+															</tr>
+															<tr>
+																<td>2T</td>
+																<td>3T</td>
+																<td>4T</td>
+																<td>4T</td>
+																<td>4T</td>
+															</tr>
+															<tr>
+																<td>10</td>
+																<td>12</td>
+																<td>14</td>
+																<td>16</td>
+																<td>18</td>
+															</tr>
+															<tr>
+																<td>4</td>
+																<td>5</td>
+																<td>6</td>
+																<td>7</td>
+																<td>8</td>
+															</tr>
+														</tbody>
+													</table>
+												</a></li>
+											</ul>
+										</li>
+										<li>
+											<input id="sub-group-3" type="checkbox" hidden />
+											<label for="sub-group-3" class="plus-4"><span class="icon-plus"></span> Preis</label>
+											<ul class="sub-group-list">
+												<li>
+  <label for="amount">Price range:</label>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+ 
+<div id="slider-range"></div>
+													<!-- <input id="input-select" type="range" min="1" max="100" value="0"> -->
+												</li>
+											</ul>
+										</li>
+										<li>
+											<input id="sub-group-4" type="checkbox" hidden />
+											<label for="sub-group-4" class="plus-5"><span class="icon-plus"></span> Second level</label>
+											<ul class="sub-group-list">
+												<li><a href="#">2nd level nav item</a></li>
+												<li><a href="#">2nd level nav item</a></li>
+												<li><a href="#">2nd level nav item</a></li>
+												<li><a href="#">2nd level nav item</a></li>
+											</ul>
+										</li>
+									</ul>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						</div>
+					</div>
 			</div><!-- end row -->
 		</div><!-- end container-fluid -->
 	</section><!-- end fitnessproducts -->
 
-	<!--Accordion Menu FILTER PRODUCTS
-	 ====================-->
-<!-- 	<div id="menu-container-filter">
-		<ul class="menu-list accordion">
-			<li id="nav1" class="toggle accordion-toggle">
-				<span class="icon-plus"></span>
-				<a class="menu-link" href="#">Filter Produkte</a>
-			</li>
-			<ul class="menu-submenu accordion-content">
-				<li><a class="head" href="#">Menu 1</a></li>
-				<li><a class="head" href="#">Menu 2</a></li>
-				<li><a class="head" href="#">Menu 3</a></li>
-				<li><a class="head" href="#">Menu 4</a></li>
-				<li><a class="head" href="#">Menu 5</a></li>
-			</ul>
-		</ul>
-	</div> -->
 
 	<section><!-- mid-mnu -->
 		<div class="container-fluid"><!-- container-fluid -->
@@ -501,103 +579,13 @@
 							</div>
 							<div class="products-item-size">
 								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="products-item">
-						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
-							<div class="discaunt">
-								<span>-70%</span>
-							</div>
-							<div class="products-item-price">
-								<div class="products-item-title"><span>Shake</span><span class="price price-new">59.95 &euro;</span></div>
-								<span class="descr">Lorem ipsum am...></span><span class="price-red">59.95 &euro;</span>
-							</div>
-							<div class="products-item-size">
-								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="products-item">
-						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
-							<div class="products-item-price">
-								<div class="products-item-title"><span>Shake</span><span class="price">59.95 &euro;</span></div>
-								<span class="descr">Lorem ipsum am...</span><span></span>
-							</div>
-							<div class="products-item-size">
-								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="products-item">
-						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
-							<div class="products-item-price">
-								<div class="products-item-title"><span>Shake</span><span class="price">59.95 &euro;</span></div>
-								<span class="descr">Lorem ipsum am...</span><span></span>
-							</div>
-							<div class="products-item-size">
-								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!-- end row -->
-			
-			<div class="row"><!-- row -->
-				<div class="col-md-3">
-					<div class="products-item">
-						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
-							<div class="products-item-price">
-								<div class="products-item-title"><span>Shake</span><span class="price">59.95 &euro;</span></div>
-								<span class="descr">Lorem ipsum am...</span><span></span>
-							</div>
-							<div class="products-item-size">
-								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
 								</div>
 							</div>
 						</div>
@@ -615,13 +603,13 @@
 							</div>
 							<div class="products-item-size">
 								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
 								</div>
 							</div>
 						</div>
@@ -636,13 +624,13 @@
 							</div>
 							<div class="products-item-size">
 								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
 								</div>
 							</div>
 						</div>
@@ -657,13 +645,103 @@
 							</div>
 							<div class="products-item-size">
 								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end row -->
+			
+			<div class="row"><!-- row -->
+				<div class="col-md-3">
+					<div class="products-item">
+						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
+							<div class="products-item-price">
+								<div class="products-item-title"><span>Shake</span><span class="price">59.95 &euro;</span></div>
+								<span class="descr">Lorem ipsum am...</span><span></span>
+							</div>
+							<div class="products-item-size">
+								<div class="pagination">
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="products-item">
+						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
+							<div class="discaunt">
+								<span>-70%</span>
+							</div>
+							<div class="products-item-price">
+								<div class="products-item-title"><span>Shake</span><span class="price price-new">59.95 &euro;</span></div>
+								<span class="descr">Lorem ipsum am...</span><span class="price-red">59.95 &euro;</span>
+							</div>
+							<div class="products-item-size">
+								<div class="pagination">
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="products-item">
+						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
+							<div class="products-item-price">
+								<div class="products-item-title"><span>Shake</span><span class="price">59.95 &euro;</span></div>
+								<span class="descr">Lorem ipsum am...</span><span></span>
+							</div>
+							<div class="products-item-size">
+								<div class="pagination">
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="products-item">
+						<div class="products-item-img" style="background-image: url(img/Pumpkin-Seeds.png);">
+							<div class="products-item-price">
+								<div class="products-item-title"><span>Shake</span><span class="price">59.95 &euro;</span></div>
+								<span class="descr">Lorem ipsum am...</span><span></span>
+							</div>
+							<div class="products-item-size">
+								<div class="pagination">
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
 								</div>
 							</div>
 						</div>
@@ -684,13 +762,13 @@
 							</div>
 							<div class="products-item-size">
 								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
 								</div>
 							</div>
 						</div>
@@ -705,13 +783,13 @@
 							</div>
 							<div class="products-item-size">
 								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
 								</div>
 							</div>
 						</div>
@@ -726,13 +804,13 @@
 							</div>
 							<div class="products-item-size">
 								<div class="pagination">
-								  <a class="left disabled" href="#">❮</a>
-								  <a href="#" class="active">XS</a>
-								  <a href="#">S</a>
-								  <a href="#">M</a>
-								  <a href="#">L</a>
-								  <a href="#">XL</a>
-								  <a class="right" href="#">❯</a>
+									<a class="left disabled" href="#">❮</a>
+									<a href="#" class="active">XS</a>
+									<a href="#">S</a>
+									<a href="#">M</a>
+									<a href="#">L</a>
+									<a href="#">XL</a>
+									<a class="right" href="#">❯</a>
 								</div>
 							</div>
 						</div>
@@ -747,13 +825,13 @@
 								</div>
 								<div class="products-item-size">
 									<div class="pagination">
-									  <a class="left disabled" href="#">❮</a>
-									  <a href="#" class="active">XS</a>
-									  <a href="#">S</a>
-									  <a href="#">M</a>
-									  <a href="#">L</a>
-									  <a href="#">XL</a>
-									  <a class="right" href="#">❯</a>
+										<a class="left disabled" href="#">❮</a>
+										<a href="#" class="active">XS</a>
+										<a href="#">S</a>
+										<a href="#">M</a>
+										<a href="#">L</a>
+										<a href="#">XL</a>
+										<a class="right" href="#">❯</a>
 									</div>
 								</div>
 							</div>
@@ -809,6 +887,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="libs/fontawesome/css/font-awesome.css">
 	<script src="js/scripts.min.js"></script>
+
 
 </body>
 </html>

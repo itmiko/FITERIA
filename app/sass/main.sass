@@ -247,8 +247,7 @@ body
 		letter-spacing: 1px
 
 //products
-.products,
-.fitnessproducts
+.products
 	padding: 40px 0
 	.col-one
 		text-transform: uppercase
@@ -573,10 +572,15 @@ footer
   content: "+"
 
 
-
 // Page_One
 //fitnessproducts
 .fitnessproducts
+	padding: 40px 0
+	.col-one
+		text-transform: uppercase
+		line-height: 33px
+		text-align: center
+		font-family: $medium-font
 	padding-bottom: 20px
 	.fitness-wrap
 		background-color: $grey
@@ -586,75 +590,131 @@ footer
 		a.new-item-img
 			margin-bottom: 0
 
-
 //Accordion menu - filter
-// #menu-container-filter .menu-list
-//   .menu-submenu
-//     padding-bottom: 20px
-//   border-bottom: 5px solid $accent
-//   color: $accent
-//   top: 190px
-//   right: 25px
-//   padding-left: 0
-//   display: block
-//   position: absolute
-//   width: 100%
-//   max-width: 290px
-//   background: $white
-//   box-shadow: rgba(100, 100, 100, 0.4) 1px 0 1px 1px
-//   z-index: 2
-//   overflow-y: auto
-//   overflow-x: hidden
-//   .menu-link
-// 		font-family: $medium-font
+.nav__list span
+  &[class^='icon-']
+    position: absolute
+    right: 5px
+    font-size: 25px
+    top: calc(50% - 16px)
+  &.icon-plus, &.icon-minus
+    top: 4px
+    -webkit-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+    -webkit-transition: all .5s ease
+    transition: all .5s ease
+  &.icon-plus
+    -webkit-transform: rotate(90deg)
+    transform: rotate(90deg)
+.nav__list .plus-1 span
+  &[class^='icon-']
+    position: absolute
+    right: 26px
+    font-size: 25px
+    top: calc(50% - 16px)
+  &.icon-plus, &.icon-minus
+    top: 52px
 
-//   ul
-//   	list-style: none
+.nav a, .nav label
+	display: block
+	padding:
+		top: 10px
+		right: 10px
+		left: 0px
+		bottom: 10px
 
-//   li.accordion-toggle
-//     font-size: 22px
-//     font-family: $bold-font
-//     padding: 42px
-//     text-transform: uppercase
-//     border-top: 1px solid $grey
-//   li
-//     &:first-of-type
-//       border-top: 0
-//     padding: 5px
-//   a
-//   	color: $accent
-// .accordion-toggle
-//   cursor: pointer
-//   position: relative
+.nav
+	background-color: #FFF
+	position: absolute
+	z-index: 999000
 
-// .accordion-content
-//   cursor: pointer
-//   font-size: 13px
-//   position: relative
-//   display: none
-//   font-family: $default-font
+	label
+		cursor: pointer
 
-// .accordion-toggle span
-//   &[class^='icon-']
-//     position: absolute
-//     right: 25px
-//     font-size: 25px
-//     top: calc(50% - 16px)
-//   &.icon-plus, &.icon-minus
-//     top: 56px
-//     -webkit-transform-origin: 50% 50%
-//     transform-origin: 50% 50%
-//     -webkit-transition: all .5s ease
-//     transition: all .5s ease
-//   &.icon-plus
-//     -webkit-transform: rotate(90deg)
-//     transform: rotate(90deg)
+.nav__list
+	list-style: none
+	border: 1px solid $silver
+	border-bottom: 5px solid $accent
+	width: 307px
+	padding: 45px 20px
+	margin: 0
+	font-size: 23px
+	text-transform: uppercase
+	li
+  	font-family: $bold-font
+	ul
+		list-style: none
+		padding-left: 5px
+		ul
+			padding-left: 0px
+	input[type=checkbox]:checked
+		& + label
+			& + ul
+				max-height: 1000px
 
-// .icon-minus:before
-//   content: "–"
+.group-list
+	height: 100%
+	max-height: 0
+	overflow: hidden
+	-webkit-transition: max-height .5s ease-in-out
+	transition: max-height .5s ease-in-out
+	li
+		font-size: 15px
+		border-bottom: 1px solid $light
+		position: relative
+		a
+			display: inline-block
+			color: $accent
+		span
+			color: $silver
+			font-size: 13px
+			position: absolute
+			right: 4px
+			top: 12px
+		.icon-plus,
+		.icon-minus
+			color: $accent
+.sub-group-list
+	height: 100%
+	max-height: 0
+	overflow: hidden
+	-webkit-transition: max-height .5s ease-in-out
+	transition: max-height .5s ease-in-out
+	li
+		font-size: 15px
+		border-bottom: 1px solid $light
+		position: relative
+	img
+		height: 60px
+	p
+		display: inline-block
+		position: absolute
+		color: $accent
+	#price
+		color: $silver
+	.price-new
+				text-decoration: line-through
+	table, tr, td
+		font-family: $medium-font
+		border: 2px solid $silver
+		border-collapse: collapse
+		tr, td
+			padding: 15px
+			text-align: center
+		td
+			&:hover
+				background-color: $silver
+				transition: all .4s ease
+				transform: scale(1.15)
 
-// .icon-plus:before
-//   content: "+"
+label
+	& > span
+		float: right
+		-webkit-transition: -webkit-transform .65s ease
+		transition: transform .65s ease
+
+
+
 
 //mid-mnu
 .mid-mnu,
