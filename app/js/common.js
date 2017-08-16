@@ -117,7 +117,16 @@ $(".news-item h4").equalHeights();
 		$(this).find("span").toggleClass("icon-minus icon-plus");
 		$(".nav .plus-5").not($(this)).find("span").removeClass("icon-minus").addClass("icon-plus")
 	});
+var stepSlider = document.getElementById('slider-step');
 
+noUiSlider.create(stepSlider, {
+	start: [ 1, 100 ],
+	step: 1,
+	range: {
+	  'min': 0,
+	  'max': 100
+	}
+});
 });
 
 
