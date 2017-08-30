@@ -572,7 +572,11 @@ footer
   content: "+"
 
 
-// Page_One
+
+
+
+
+/////////////////////// Page_One////////////////////
 //fitnessproducts
 .fitnessproducts
 	padding: 40px 0
@@ -587,10 +591,16 @@ footer
 		.col-one
 			text-align: left
 			margin-top: 46px
+			h2
+				font-size: 22px
 		a.new-item-img
 			margin-bottom: 0
 
 //Accordion menu - filter
+
+.fitness-filter
+	// .nav
+	// 	width: 100%
 .nav__list span
   &[class^='icon-']
     position: absolute
@@ -627,16 +637,22 @@ footer
 	background-color: #FFF
 	position: absolute
 	z-index: 999000
-
+	width: 100%
 	label
 		cursor: pointer
+	.plus-1
+		font-size: 21px
 
 .nav__list
 	list-style: none
-	border: 1px solid $silver
+	// border: 1px solid $silver
 	border-bottom: 5px solid $accent
-	width: 307px
-	padding: 45px 20px
+	// width: 307px
+	padding:
+		top: 45px
+		bottom: 54px
+		right: 20px
+		left: 10px
 	margin: 0
 	font-size: 23px
 	text-transform: uppercase
@@ -777,7 +793,9 @@ label
 
 //fit_products
 .fit_products
-	margin-bottom: 30px
+	padding-bottom: 50px
+	border-bottom: 1px solid $grey
+
 	.products-item
 		position: relative
 		background-color: $grey
@@ -932,8 +950,28 @@ label
 			left: 0
 			content: ""
 
+section.pag
+	margin:
+		top: 25px	
+		bottom: 60px
+		left: 30%
 
-
+	width: 200px
+	.seit
+		display: inline-block
+		text-transform: uppercase
+		border-bottom: 2px solid $accent
+		line-height: 18px
+		// text-align: center
+	a.left.disabled
+		border: 1px solid $silver
+		color: $silver
+		padding: 2px 6px
+	a.right-arrow
+		border: 1px solid $silver
+		color: $accent
+		padding: 2px 6px
+		
 
   	
 
